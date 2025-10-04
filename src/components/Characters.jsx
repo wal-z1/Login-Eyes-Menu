@@ -56,7 +56,7 @@ export default function Characters() {
 	useEffect(() => {
 		function trackMouse(e) {
 			// select all eyes use the query select thing
-			all_eyes = document.querySelectorAll(".eye");
+			let all_eyes = document.querySelectorAll(".eye");
 			// returns an array of the eyes
 			all_eyes.forEach((oneeye) => {
 				// return the pupil children of each eye to the thing
@@ -70,7 +70,10 @@ export default function Characters() {
 				const x = e.clientX - eyeXcenter;
 				const y = e.clientY - eyeYcenter;
 				// move pupil to mouse , making it move with x and y distances towords the mouse
-				pupil.style.transform = `translate(${x * 0.2}px, ${y * 0.3}px)`;
+				const maxMove = 3; // -maxMove ≤ move ≤ +maxMove
+				const moveX = Math.max(-maxMove, Math.min(x * 0.1, maxMove));
+				const moveY = Math.max(-maxMove, Math.min(y * 0.1, maxMove));
+				pupil.style.transform = `translate(${moveX}px, ${moveY}px)`;
 			});
 		}
 
