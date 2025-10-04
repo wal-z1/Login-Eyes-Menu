@@ -1,11 +1,13 @@
-import { useState } from "react";
+import Characters from "./components/Characters";
+import LoginForm from "./components/LoginForm";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<>
-			<h1 class="text-3xl font-bold underline font-mozilla">Hello world!</h1>
+			<div className="container grid grid-cols-2">
+				<Characters />
+				<LoginForm />
+			</div>
 		</>
 	);
 }

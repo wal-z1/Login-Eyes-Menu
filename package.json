@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
-    "framer-motion": "^12.23.12",
+    "framer-motion": "^12.23.22",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.12"
@@ -26,5 +26,18 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "vite": "^7.1.2"
-  }
+  },
+  "description": "This is a test repo , the reason of creation is to try and create a concept i have seen in a video",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wal-z1/Login-Eyes-Menu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wal-z1/Login-Eyes-Menu/issues"
+  },
+  "homepage": "https://github.com/wal-z1/Login-Eyes-Menu#readme"
 }
